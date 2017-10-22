@@ -15,7 +15,8 @@ public class MzjTest {
 	@Test
 	public void getGenFiles() {
 		try {
-			String configFile = "/scripts/genConfig.xml";
+			String configFile = "/scripts/ordersConfig.xml";
+//			String configFile = "/scripts/genConfig.xml";
 			List<String> warnings = new ArrayList<String>();
 			ConfigurationParser cp = new ConfigurationParser(warnings);
 			Configuration config = cp.parseConfiguration(JavaCodeGenerationTest.class.getResourceAsStream(configFile));
